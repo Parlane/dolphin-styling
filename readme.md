@@ -32,7 +32,7 @@ Following this guide and formatting your code as detailed will likely get your p
     - Note that this does not mean you should try and use all 100 characters every time you have the chance. Typically with well formatted code, you normally shouldn't hit a line count of anything over 80 or 90 characters.
 - The indentation style we use is tabs for initial indentation and then, if vertical alignment is needed, spaces are to be used.
 - The opening brace for namespaces, classes, enums, structs, conditionals, and loops go on the next line.
-  - With arrays and lambda expressions it is OK to keep the brace on the same line.
+  - With arrays initializations and lambda expressions it is OK to keep the brace on the same line.
 
 ### Naming
 - All class, enum, function, and struct names should be in upper CamelCase. If the name contains an abbreviation, acronym, or initialism – uppercase it.
@@ -41,10 +41,8 @@ Following this guide and formatting your code as detailed will likely get your p
 - All compile time constants should be fully uppercased. With constants that have more than one word in them, use an underscore to separate them.
   - `const int PI = 3.14159;`
   - `const int MAX_PATH = 260;`
-- All new variables should simply follow the formatting that is already present in the source file for their naming. If a new source file is made, then there are two choices for formatting variable names. Do not intermix these after choosing.
-  - Headless CamelCase - `int thisVariableName;`
+- All variables should be lowercase with underscores separating the individual words in the name.
   - Lowercase with underscores - `int this_variable_name;`
-  - TODO: Decide on the preferred format above since this hasn't been discussed yet.
 - Please do not use [Hungarian notation] (http://en.wikipedia.org/wiki/Hungarian_notation) prefixes with variables.
 
 ### Classes and Structs
