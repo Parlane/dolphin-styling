@@ -42,7 +42,7 @@ Following this guide and formatting your code as detailed will likely get your p
   - `const int PI = 3.14159;`
   - `const int MAX_PATH = 260;`
 - All variables should be lowercase with underscores separating the individual words in the name.
-  - Lowercase with underscores - `int this_variable_name;`
+  - `int this_variable_name;`
 - Please do not use [Hungarian notation] (http://en.wikipedia.org/wiki/Hungarian_notation) prefixes with variables.
 
 ### Classes and Structs
