@@ -32,7 +32,7 @@ Following this guide and formatting your code as detailed will likely get your p
     - Note that this does not mean you should try and use all 100 characters every time you have the chance. Typically with well formatted code, you normally shouldn't hit a line count of anything over 80 or 90 characters.
 - The indentation style we use is tabs for initial indentation and then, if vertical alignment is needed, spaces are to be used.
 - The opening brace for namespaces, classes, enums, structs, conditionals, and loops go on the next line.
-  - With arrays initializations and lambda expressions it is OK to keep the brace on the same line.
+  - With array initializations and lambda expressions it is OK to keep the brace on the same line.
 - Don't collapse single line conditional or loop bodies onto the same line as its header. Put it on the next line.
   - Yes:
 
