@@ -102,8 +102,24 @@ Following this guide and formatting your code as detailed will likely get your p
 - For each of the above specified access levels, the contents of each should follow this given order: constructor, destructor, operator overloads, functions, then variables.
 - When defining the variables, define `static` variables before the non-static ones.
 
+```c++
+class ExampleClass : public SomeParent
+{
+public:
+    ExampleClass(int x, int y);
+  
+    int GetX() const;
+    int GetY() const;
 
-TODO: Put example of class formatting here.
+protected:
+    virtual void SomeProtectedFunction() = 0;
+    static float s_some_variable;
+
+private:
+    int m_x;
+    int m_y;
+};
+```
 
 ## Code Specific
 ---
