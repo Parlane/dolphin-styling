@@ -132,8 +132,7 @@ private:
 - If a [foreach loop](http://en.cppreference.com/w/cpp/language/range-for) can be used instead of container iterators, use it.
 - Obviously, try not to use `goto` unless you have a *really* good reason for it.
 - If a compiler warning is found, please try and fix it.
-- Try to avoid using raw pointers (pointer allocated with `new`) as much as possible. There are cases where using a raw pointer is unavoidable, and in these situations it is OK to use them. An example of this is functions from a C library that require them.
-  - In cases where it is avoidable, the STL usually has a means to solve this (ie. `vector`, `unique_ptr`, etc).
+- Try to avoid using raw pointers (pointers allocated with `new`) as much as possible. There are cases where using a raw pointer is unavoidable, and in these situations it is OK to use them. An example of this is functions from a C library that require them. In cases where it is avoidable, the STL usually has a means to solve this (`vector`, `unique_ptr`, etc).
 - Do not use the `auto` keyword everywhere. While it's nice that the type can be determined at runtime by the compiler, it cannot be resolved at 'readtime' by the developer as easily. Use auto only in cases where it is obvious what the type being assigned is (note: 'obvious' means not having to open other files or reading the header file). Some situations where it is appropriate to use `auto` is when iterating over a `std::map` container in a foreach loop, or to shorten the length of container iterator variable declarations.
 - Do not use `using namespace [x];` in headers. Try not to use it at all if you can.
 
