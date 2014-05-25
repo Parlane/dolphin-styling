@@ -126,7 +126,6 @@ private:
 
 ### General
 - Using C++11 features is OK and recommended.
-  - Refrain from using C++11 functions introduced in the `string` header for the time being however, as Android currently uses a broken implementation of `string` which causes these functions to be unincluded in the bionic libc.
 - Use the [nullptr](http://en.cppreference.com/w/cpp/language/nullptr) type over the macro `NULL` whenever possible.
   - The one exception to this is when calling Windows API functions. However in this case it is recommended that you simply pass `0`.
 - If a [foreach loop](http://en.cppreference.com/w/cpp/language/range-for) can be used instead of container iterators, use it.
