@@ -154,7 +154,7 @@ private:
 ### Functions
 - If a function parameter is not intended to have their assigned value or data changed, please mark that parameter as `const`.
 - Always try to define `std::string` parameters as const references, unless the specific aim of the function is to modify said `std::string`.
-- Functions that specifically modify their given arguments should have their respective parameters marked as a pointer so that the variable being modified is sytaxically obvious.
+- Functions that specifically modify their parameters should have the respective parameter(s) marked as a pointer so that the variables being modified are sytaxically obvious.
   - What not to do:
 
     ```c++
