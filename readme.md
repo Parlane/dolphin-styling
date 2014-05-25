@@ -141,6 +141,7 @@ private:
   - Standard library headers
   - System-specific headers (these should also likely be in an `#ifdef` block unless the source file itself is system-specific).
   - Dolphin source file headers
+- Headers should be included in a way that is relative to the `[Dolphin Root]/Source/Core` directory.
 - The headers should be included in alphabetical order for each section respectively.
 
 ### Loops
