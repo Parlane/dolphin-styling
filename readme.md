@@ -127,7 +127,6 @@ private:
 ### General
 - Using C++11 features is OK and recommended.
 - Use the [nullptr](http://en.cppreference.com/w/cpp/language/nullptr) type over the macro `NULL` whenever possible.
-  - The one exception to this is when calling Windows API functions. However in this case it is recommended that you simply pass `0`.
 - If a [foreach loop](http://en.cppreference.com/w/cpp/language/range-for) can be used instead of container iterators, use it.
 - Obviously, try not to use `goto` unless you have a *really* good reason for it.
 - If a compiler warning is found, please try and fix it.
