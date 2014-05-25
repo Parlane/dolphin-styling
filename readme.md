@@ -61,6 +61,9 @@ Following this guide and formatting your code as detailed will likely get your p
 - All variables should be lowercase with underscores separating the individual words in the name.
   - `int this_variable_name;`
 - Please do not use [Hungarian notation](http://en.wikipedia.org/wiki/Hungarian_notation) prefixes with variables.
+- Variable prefixes
+  - Global variables – `g_`
+  - Class variables – `m_`
 
 ### Conditionals
 - Do not leave `else` or `else if` conditions dangling unless the `if` condition lacks braces.
